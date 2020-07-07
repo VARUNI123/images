@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex box</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		header
+		{
+			text-align: center;
+			font-weight: bold;
+			padding: 1%;
+			font-size: 30px;
+		}
+	.grid
+	{
+		
+		display: flex;
+		flex-wrap: wrap;
+		border: 1px solid green;
+		justify-content: flex-start;
+		
+
+
+	}
+	.shorthand
+	{
+		background-color: slateblue;
+		display: flex;
+		flex-flow: column wrap;
+
+	}
+	.spacearound
+	{
+		justify-content: space-around;
+		border: 1px solid yellow;
+	}
+
+		img
+		{
+			width: 250px;
+			height: 250px;
+			padding: 15px;
+			margin-left: 10px;
+			border: 1px solid green;
+
+		}
+		@media only screen and (max-width:600px){
+			.grid
+			{
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+
+			}
+
+		img
+		{
+			width: 250px;
+			height: 250px;
+			padding: 15px;
+			margin:55px;
+			border: 1px solid green;
+
+		}
+
+		}
+	</style>
+</head>
+<body>
+	<header>IMAGES</header>
+	<div class="grid">
+		<img src="img/bgcd.jpg">
+		<img src="img/bgdec.jpg">
+		<img src="img/bgstar.jpg">
+		<img src="img/bgstyle.jpg">
+		<img src="img/bgnature.jpg">
+		<img src="img/bgsoftware.jpg">
+		<img src="bgblue.jpg">
+		<img src="img/bgcd.jpg">
+		<img src="img/bgdec.jpg">
+		<img src="img/bgstar.jpg">
+		<img src="img/bgstyle.jpg">
+		<img src="img/bgnature.jpg">
+		<img src="img/bgsoftware.jpg">
+		<img src="bgblue.jpg">
+	</div>
+<div class="shorthand">
+		<img src="img/bgcd.jpg">
+		<img src="img/bgdec.jpg">
+		<img src="img/bgstar.jpg">
+		<img src="img/bgstyle.jpg">
+		<img src="img/bgnature.jpg">
+		<img src="img/bgsoftware.jpg">
+		<img src="bgblue.jpg">
+	</div>
+	<div class="spacearound">
+		<img src="img/bgcd.jpg">
+		<img src="img/bgdec.jpg">
+		<img src="img/bgstar.jpg">
+		<img src="img/bgstyle.jpg">
+		
+	</div>
+</body>
+</html>
