@@ -9,8 +9,24 @@
 			text-align: center;
 			font-weight: bold;
 			padding: 1%;
-			font-size: 30px;
+			font-size: 40px;
 			font-family:algerian;
+			text-shadow: 2px 2px 5px red;
+
+		}
+		header:hover
+		{
+			background-color: dodgerblue;
+		}
+		img:hover
+		{
+			background-color: white;
+		}
+		.card2
+		{
+			box-shadow:4px 4px 4px 4px #626880;
+			height:50px;
+	
 		}
 	.grid
 	{
@@ -28,7 +44,7 @@
 		background-color:#948787 ;
 		display: flex;
 		flex-wrap:wrap;
-		justify-content: space-between;
+		justify-content: space-around flex-start flex-wrap;
 		
 
 	}
@@ -39,15 +55,22 @@
 			height: 250px;
 			padding: 15px;
 			margin-left: 10px;
-			border: 1px solid black;
+			border: 2px solid black;
+			border-radius:20px;
+			border-style:double;
+			margin:5px;
+
+
 
 		}
+
 		@media only screen and (max-width:600px){
 			.grid
 			{
 				display: flex;
 				flex-direction: column;
 				flex-wrap: wrap;
+				font-family:san-sarif;
 
 			}
 
@@ -60,12 +83,16 @@
 			border: 1px solid black;
 
 		}
+		img:hover
+		{
+			background-color: white;
+		}
 
 		}
 	</style>
 </head>
 <body>
-	<header>IMAGES</header>
+	<header class="card2"><marquee direction="alternate">IMAGES</marquee></header>
 	<div class="grid shorthand">
 		<img src="straw.jpg">
 		<img src="img1.jpg">
@@ -73,7 +100,7 @@
 		<img src="track.jpg">
 		<img src="world.jpg">
 		<img src="night.jpg">
-		<img src="shiva.jpg">
+		<img src="hiva.jpg">
 		<img src="bgcd.jpg">
 		<img src="bgdec.jpg">
 		<img src="bgstar.jpg">
